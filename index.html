@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Lindah</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Soft floating particles */
+    .particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: rgba(255, 182, 193, 0.4);
+      border-radius: 50%;
+      animation: float 12s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+      50% { transform: translateY(-80px) translateX(20px); opacity: 0.8; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 60px 50px;
+      max-width: 520px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.2s ease-out;
+      position: relative;
+      z-index: 10;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shine 4s linear infinite;
+      margin-bottom: 12px;
+    }
+
+    @keyframes shine {
+      to { background-position: 200% center; }
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 40px;
+    }
+
+    .message {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    .message strong {
+      color: #ffb6c1;
+      font-weight: 400;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      margin: 20px 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    .from {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 30px;
+      letter-spacing: 1px;
+    }
+
+    /* Decorative line */
+    .line {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ff9a9e, transparent);
+      margin: 0 auto 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating particles -->
+  <div class="particle" style="top: 15%; left: 10%; animation-delay: 0s;"></div>
+  <div class="particle" style="top: 25%; left: 80%; animation-delay: 2s;"></div>
+  <div class="particle" style="top: 60%; left: 15%; animation-delay: 4s;"></div>
+  <div class="particle" style="top: 70%; left: 75%; animation-delay: 1s;"></div>
+  <div class="particle" style="top: 40%; left: 50%; animation-delay: 3s;"></div>
+
+  <div class="card">
+    <div class="subtitle">A quiet note for someone special</div>
+    <div class="name">Lindah</div>
+    <div class="line"></div>
+
+    <div class="message">
+      Some people walk into your life and everything becomes a little lighter.<br><br>
+      Thank you for the laughter that comes so easily,<br>
+      the trust that feels natural,<br>
+      and the memories that stay long after the moment has passed.<br><br>
+      <strong>You make ordinary days feel warmer.</strong>
+    </div>
+
+    <div class="heart">♡</div>
+
+    <div class="from">— made just for you</div>
+  </div>
+</body>
+</html>To you lindah mwananchi
